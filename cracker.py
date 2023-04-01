@@ -23,7 +23,7 @@ t1 = threading.Thread(target=brute, args=(1, midpoint))
 t1.start()
 t1.join()
 
-t2 = threading.Thread(target=brute, args=(midpoint + 2, len(password)))
+t2 = threading.Thread(target=brute, args=(midpoint + 1, len(password)))
 t2.start()
 t2.join()
 
